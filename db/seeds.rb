@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Hybrid.create( [
+    { biography: 'Tony is a Ram Hybrid from the Randall Park Mall.' }
+    { biography: 'Cornelius is a Tree Hybrid from the Randall Park Mall' }
+    { biography: 'Xavier is a Trout Hybrid from the Randall Park Mall' }
+])
