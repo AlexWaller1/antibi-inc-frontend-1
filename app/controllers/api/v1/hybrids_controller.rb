@@ -15,4 +15,22 @@ class Api::V1::HybridsController < ApplicationController
         render json: @hybrid, status: 200
     end
 
+    def update
+        @hybrid = Hybrid.find(params[:id])
+        @hybrid.update(hybrid_params)
+        render json: @hybrid, status: 200
+    end
+
+    def destroy
+        @hybrid = Hybrid.find(params[:id])
+        @hybrid.delete
+        render json: {hybridId: @hybrid.id}
+    end
+
+    private
+
+    def hybrid_params
+        params.require(:hybrid).require(:biography)
+    end
+
 end
