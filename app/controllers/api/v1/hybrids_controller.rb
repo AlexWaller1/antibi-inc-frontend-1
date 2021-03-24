@@ -30,7 +30,7 @@ class Api::V1::HybridsController < ApplicationController
     private
 
     def hybrid_params
-        params.require(:hybrid).require(:biography)
+        params.require(:hybrid).permit(:biography)
     end
 
 end
