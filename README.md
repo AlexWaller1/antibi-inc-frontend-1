@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+        
+curl -vk -X POST -H "Content-Type: application/json"  --data '{"biography": "Created VIA Api"}' http://localhost:3000/api/v1/hybrids
